@@ -29,7 +29,10 @@ const options = {
     if (calendarTime < startTime) {
       Notiflix.Notify.failure('Please choose a date in the future', {
         clickToClose: true,
+        position: 'center-center',
+        backOverlay: true,
       });
+      btnStartRef.disabled = true;
     } else {
       btnStartRef.removeAttribute('disabled');
     }
@@ -66,7 +69,6 @@ class Timer {
       if (deltaTime < 0) {
         clearInterval(this.intervalId);
         this.isActive = false;
-        btnStartRef.disabled = false;
       } else {
         const time = this.convertMs(deltaTime);
         btnStartRef.disabled = true;

@@ -1,0 +1,58 @@
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.timer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  background-color: rgb(92, 199, 160);
+  border-radius: 25px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.value {
+  color: rgb(72, 61, 61);
+  font-size: 50px;
+}
+.label {
+  color: rgb(72, 61, 61);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input {
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button {
+  background-color: rgb(92, 199, 160);
+  border: none;
+  margin-left: 20px;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  color: rgb(72, 61, 61);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: rgb(196, 198, 197);
+  cursor: no-drop;
+}

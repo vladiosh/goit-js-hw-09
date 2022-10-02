@@ -13,6 +13,8 @@ btnStartRef.addEventListener('click', () => {
   timer.start();
 });
 
+btnStartRef.disabled = true;
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -38,12 +40,6 @@ const options = {
 };
 
 flatpickr('#datetime-picker', options);
-
-// clearCalendar();
-
-// function clearCalendar() {
-//   inputRef.value = '';
-// }
 
 class Timer {
   constructor({ onTick }) {
